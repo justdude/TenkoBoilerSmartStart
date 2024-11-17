@@ -10,7 +10,7 @@ namespace TenkoBoilerSmartStart
     {
         [FunctionName("StageStatusCheck")]
         public static async Task Run(
-        [TimerTrigger("0 */20 * * * *")] TimerInfo myTimer, // This CRON expression runs the function every 5 minutes
+        [TimerTrigger("0 */1 * * * *")] TimerInfo myTimer, // This CRON expression runs the function every 5 minutes
         ILogger log)
         {
             log.LogInformation($"C# Timer trigger function executed at: {DateTime.Now}");
